@@ -52,10 +52,10 @@
 
 ### Cost Management:
 
-<b>Reserved Instances:</b> Consider using reserved instances for predictable workloads to save on costs.
-<b>Monitoring Costs:</b> Use Azure Cost Management to monitor and optimize your database spending.
-<b>Database Sizing:</b> Right-size your databases to match your workload needs and avoid over-provisioning.
-<b>Serverless Options:</b> For variable workloads, consider using the serverless tier to automatically scale resources and reduce costs during idle times.
-<b>Optimize Storage:</b> Regularly review and optimize storage usage, archiving or deleting obsolete data as needed.
+- <b>Reserved Instances:</b> Consider using reserved instances for predictable workloads to save on costs.
+- <b>Monitoring Costs:</b> Use Azure Cost Management to monitor and optimize your database spending.
+- <b>Database Sizing:</b> Right-size your databases to match your workload needs and avoid over-provisioning.
+- <b>Serverless Options:</b> For variable workloads, consider using the serverless tier to automatically scale resources and reduce costs during idle times.
+- <b>Optimize Storage:</b> Regularly review and optimize storage usage, archiving or deleting obsolete data as needed.
 
  
