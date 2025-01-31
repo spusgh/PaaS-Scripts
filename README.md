@@ -7,7 +7,7 @@
 
 
 
-## AzureSql
+## Azure SQL
 ======================== Azure SQL - Deployment Best Practices ========================
 ## Best Practices using Azure SQL to ensure optimal performance, security, and efficiency:
 
@@ -22,40 +22,40 @@
 
 ### Security Best Practices:
 
-Enable Azure Defender: Use Azure Defender for SQL to enhance database security by detecting potential vulnerabilities and threats.
-Use Azure Active Directory Authentication: Implement Azure AD authentication to manage database access and improve security.
-Data Encryption: Use Transparent Data Encryption (TDE) for data at rest and Always Encrypted for data in use. Ensure that all connections use SSL/TLS for data in transit.
-Network Security: Use Virtual Network Service Endpoints and Private Link to secure access to your SQL databases and limit exposure to the public internet.
-Compliance: Regularly review and comply with data protection regulations and best practices.
+- <b>Enable Azure Defender:</b> Use Azure Defender for SQL to enhance database security by detecting potential vulnerabilities and threats.
+- <b>Use Azure Active Directory Authentication:</b> Implement Azure AD authentication to manage database access and improve security.
+- <b>Data Encryption:</b> Use Transparent Data Encryption (TDE) for data at rest and Always Encrypted for data in use. Ensure that all connections use SSL/TLS for data in transit.
+- <b>Network Security:</b> Use Virtual Network Service Endpoints and Private Link to secure access to your SQL databases and limit exposure to the public internet.
+- <b>Compliance:</b> Regularly review and comply with data protection regulations and best practices.
 
 
 
 ### Management and Monitoring:
 
-Automated Backups: Set up automated backups with the appropriate retention period to ensure data protection and disaster recovery.
-Scaling: Utilize the elastic scaling features to dynamically adjust resources based on workload demands.
-Auditing and Monitoring: Enable auditing to track database activities and use Azure Monitor for continuous monitoring and alerting.
-Automatic Tuning: Enable automatic tuning to automatically apply performance improvements and recommendations.
-Policy Management: Implement Azure Policy to enforce organizational standards and compliance.
+- <b>Automated Backups:</b> Set up automated backups with the appropriate retention period to ensure data protection and disaster recovery.
+- <b>Scaling:</b> Utilize the elastic scaling features to dynamically adjust resources based on workload demands.
+- <b>Auditing and Monitoring:</b> Enable auditing to track database activities and use Azure Monitor for continuous monitoring and alerting.
+- <b>Automatic Tuning:</b> Enable automatic tuning to automatically apply performance improvements and recommendations.
+- <b>Policy Management:</b> Implement Azure Policy to enforce organizational standards and compliance.
 
 
 
 ### Development and Deployment:
 
-DevOps Integration: Use Azure DevOps for continuous integration and continuous deployment (CI/CD) pipelines to streamline development and deployment processes.
-Schema Management: Use tools like SQL Server Data Tools (SSDT) and Entity Framework for version control and schema management.
-Testing: Implement rigorous testing protocols, including unit tests, integration tests, and performance tests.
-Documentation: Maintain comprehensive documentation for database schema, configurations, and changes.
-Resource Management: Use Resource Manager templates for consistent and repeatable deployment of resources.
+- <b>DevOps Integration:</b> Use Azure DevOps for continuous integration and continuous deployment (CI/CD) pipelines to streamline development and deployment processes.
+- <b>Schema Management:</b> Use tools like SQL Server Data Tools (SSDT) and Entity Framework for version control and schema management.
+- <b>Testing:</b> Implement rigorous testing protocols, including unit tests, integration tests, and performance tests.
+- <b>Documentation:</b> Maintain comprehensive documentation for database schema, configurations, and changes.
+- <b>Resource Management:</b> Use Resource Manager templates for consistent and repeatable deployment of resources.
 
 
 
 ### Cost Management:
 
-Reserved Instances: Consider using reserved instances for predictable workloads to save on costs.
-Monitoring Costs: Use Azure Cost Management to monitor and optimize your database spending.
-Database Sizing: Right-size your databases to match your workload needs and avoid over-provisioning.
-Serverless Options: For variable workloads, consider using the serverless tier to automatically scale resources and reduce costs during idle times.
-Optimize Storage: Regularly review and optimize storage usage, archiving or deleting obsolete data as needed.
+<b>Reserved Instances:</b> Consider using reserved instances for predictable workloads to save on costs.
+<b>Monitoring Costs:</b> Use Azure Cost Management to monitor and optimize your database spending.
+<b>Database Sizing:</b> Right-size your databases to match your workload needs and avoid over-provisioning.
+<b>Serverless Options:</b> For variable workloads, consider using the serverless tier to automatically scale resources and reduce costs during idle times.
+<b>Optimize Storage:</b> Regularly review and optimize storage usage, archiving or deleting obsolete data as needed.
 
  
