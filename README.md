@@ -1,9 +1,9 @@
 ﻿# PAAS
 
-The platform engineering POCs - blend both PaaS (Platform as a Service) and SaaS (Software as a Service) depending on which layer:
+The platform engineering - blend both PaaS (Platform as a Service) and SaaS (Software as a Service) depending on which layer:
 
 ## ⚙️ Mostly PaaS (Platform as a Service)
-These POCs lean heavily on PaaS components for customization, orchestration, and deployment:
+These lean heavily on PaaS components for customization, orchestration, and deployment:
 
 <li><b>LangChain Agents, FastAPI, Azure ML, MLflow, Feast →</b> Developer-centric tools used to build and deploy custom AI services
 
@@ -23,7 +23,7 @@ SaaS enters the picture when these components are consumed as packaged applicati
 <li><b>GPT-4, Claude via Azure, Ollama local LLMs →</b> Can be SaaS if you’re using hosted inference endpoints
 
 ## 🧩 Summary
-| POC Layer	| Classification |
+|   Layer	| Classification |
 | :---   | :--- |
 | Data & Model Ops |PaaS |
 | Agent Workflows | PaaS |
@@ -74,7 +74,7 @@ Build a reusable feature store for credit risk models or underwriting
 | Monitoring	| Prometheus + Grafana |
 
 
-### 🧬 4. Retrieval-Augmented Generation (RAG) POC
+### 🧬 4. Retrieval-Augmented Generation (RAG)  
 #### Goal
 Serve accurate answers from enterprise data using LLM + vector search
 
