@@ -5,26 +5,26 @@ The platform engineering POCs - blend both PaaS (Platform as a Service) and SaaS
 ## ⚙️ Mostly PaaS (Platform as a Service)
 These POCs lean heavily on PaaS components for customization, orchestration, and deployment:
 
-LangChain Agents, FastAPI, Azure ML, MLflow, Feast → Developer-centric tools used to build and deploy custom AI services
+<li><b>LangChain Agents, FastAPI, Azure ML, MLflow, Feast →</b> Developer-centric tools used to build and deploy custom AI services
 
-Azure SQL, Azure Blob Storage, Redis, Postgres, Pinecone → Platform-managed services for data storage and querying
+<li><b>Azure SQL, Azure Blob Storage, Redis, Postgres, Pinecone → </b>Platform-managed services for data storage and querying
 
-Power Automate / Azure Data Factory / Synapse → Integrated data pipelines and task automation
+<li><b>Power Automate / Azure Data Factory / Synapse → </b>Integrated data pipelines and task automation
 
 These services provide infrastructure and tooling but require engineering effort to operationalize.
 
 ## 📦 Sometimes SaaS (Software as a Service)
 SaaS enters the picture when these components are consumed as packaged applications:
 
-Power BI dashboards or Power Apps frontends → No-code apps that provide business-ready interfaces
+<li><b>Power BI dashboards or Power Apps frontends → </b>No-code apps that provide business-ready interfaces
 
-Sentinel for security monitoring, Purview for data governance → Operational tools consumed as turnkey software
+<li><b>Sentinel for security monitoring, Purview for data governance →</b> Operational tools consumed as turnkey software
 
-GPT-4, Claude via Azure, Ollama local LLMs → Can be SaaS if you’re using hosted inference endpoints
+<li><b>GPT-4, Claude via Azure, Ollama local LLMs →</b> Can be SaaS if you’re using hosted inference endpoints
 
 ## 🧩 Summary
 | POC Layer	| Classification |
-| :---   | :--- | :--- |
+| :---   | :--- |
 | Data & Model Ops |PaaS |
 | Agent Workflows | PaaS |
 | Compliance Dashboards | SaaS (if UI-focused), PaaS (if API-driven) |
@@ -73,7 +73,8 @@ Build a reusable feature store for credit risk models or underwriting
 | Deployment	| Azure ML + FastAPI or BentoML
 | Monitoring	| Prometheus + Grafana |
 
-###🧬 4. Retrieval-Augmented Generation (RAG) POC
+
+### 🧬 4. Retrieval-Augmented Generation (RAG) POC
 #### Goal
 Serve accurate answers from enterprise data using LLM + vector search
 
