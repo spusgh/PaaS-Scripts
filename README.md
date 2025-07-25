@@ -1,61 +1,104 @@
+﻿# PAAS
+
+The platform engineering POCs - blend both PaaS (Platform as a Service) and SaaS (Software as a Service) depending on which layer:
+
+## ⚙️ Mostly PaaS (Platform as a Service)
+These POCs lean heavily on PaaS components for customization, orchestration, and deployment:
+
+LangChain Agents, FastAPI, Azure ML, MLflow, Feast → Developer-centric tools used to build and deploy custom AI services
+
+Azure SQL, Azure Blob Storage, Redis, Postgres, Pinecone → Platform-managed services for data storage and querying
+
+Power Automate / Azure Data Factory / Synapse → Integrated data pipelines and task automation
+
+These services provide infrastructure and tooling but require engineering effort to operationalize.
+
+## 📦 Sometimes SaaS (Software as a Service)
+SaaS enters the picture when these components are consumed as packaged applications:
+
+Power BI dashboards or Power Apps frontends → No-code apps that provide business-ready interfaces
+
+Sentinel for security monitoring, Purview for data governance → Operational tools consumed as turnkey software
+
+GPT-4, Claude via Azure, Ollama local LLMs → Can be SaaS if you’re using hosted inference endpoints
+
+## 🧩 Summary
+| POC Layer	| Classification |
+| :---   | :--- | :--- |
+| Data & Model Ops |PaaS |
+| Agent Workflows | PaaS |
+| Compliance Dashboards | SaaS (if UI-focused), PaaS (if API-driven) |
+| LLM Access	| SaaS (hosted), PaaS (local) |
+| UI Portals	| SaaS (low-code), PaaS (custom dev) |
 
 
 
-## Table of contents
-1. [Azure SQL](#AzureSql)
+### 🧠 1. LLM-Powered Document Summarization & Classification
+#### Goal 
+Ingest PDFs and classify documents (e.g. KYC, loan docs, contracts) using LLMs
 
 
+| Layer	| Tech Stack| 
+| :---   | :--- |
+| Data Ingestion |Azure Form Recognizer, LangChain DocumentLoaders |
+| LLM Backbone	| GPT-4, Claude Sonnet, Ollama |
+| Storage	| Azure Blob Storage / MongoDB |
+| Orchestration	| LangChain Agent, FastAPI |
+| UI	| Power Apps or Streamlit |
+| Output	| Summaries, approval status, audit trail |
+
+### 🔒 2. Compliance Automation via AI Agents
+#### Goal 
+Monitor risk rules (DTI, LTV, CreditScore) and trigger alerts + recommendations
+
+| Layer	| Tech Stack| 
+| :---   | :--- |
+| Source Data	| SQL Server, Snowflake |
+| Agent Framework	| LangChain + LangSmith |
+| Rules Engine	| JSON rulebooks + Pandas|
+| LLMs	| GPT-4 + Claude via Azure |
+| Notification	| Power Automate, Slack Webhook |
+| Audit Logging	| Azure Monitor + Sentinel |
+
+### ⚙️ 3. Modular Feature Store for ModelOps
+#### Goal 
+Build a reusable feature store for credit risk models or underwriting
+
+| Layer	| Tech Stack| 
+| :---   | :--- |
+| Store	| Feast + Redis or Postgres |
+| Feature Engineering	| PySpark / Pandas |
+| Data Flow	| Azure Data Factory / Synapse |
+| Model Training	| MLflow + XGBoost / CatBoost |
+| Deployment	| Azure ML + FastAPI or BentoML
+| Monitoring	| Prometheus + Grafana |
+
+###🧬 4. Retrieval-Augmented Generation (RAG) POC
+#### Goal
+Serve accurate answers from enterprise data using LLM + vector search
+
+| Layer	| Tech Stack| 
+| :---   | :--- |
+| Embedding Model	| text-embedding-ada-002, instructor-xl |
+| Vector Store	| Pinecone / Weaviate / Azure Search |
+| App Layer	| LangChain RetrievalQA or Haystack |
+| UI	| Power Pages / React / Streamlit |
+| Source | Corpus	Document Registry + CRM Data |
+| LLM	| Ollama local models or GPT-4 on Azure |
+
+### 🖇️ 5. Model Governance Portal (HIPAA/FCRA-aligned)
+#### Goal 
+Trace lineage, access control, and compliance history of ML models
+
+| Layer	| Tech Stack| 
+| :---   | :--- |
+| Metadata Catalog	| MLflow + Azure Purview |
+| Lineage Mapping	| Great Expectations + OpenLineage |
+| Access Control	| Azure AD + Role-based APIs |
+| Reporting	| Power BI + Markdown DSL |
+| LLM Integration	| GPT Agents for model explanation |
+| UI Portal	| Power Apps or Dash + Streamlit |
 
 
-## Azure SQL
-======================== Azure SQL - Deployment Best Practices ========================
-## Best Practices using Azure SQL to ensure optimal performance, security, and efficiency:
+🧠📦🚀.
 
-### Performance Optimization:
-- <b>Choose the Right Pricing Tier:</b> Select the appropriate pricing tier based on your workload requirements. Use the DTU model for simpler needs and vCore model for more control over resources.
-- <b>Use Indexing:</b> Create and maintain indexes to improve query performance. Use the INDEX tuning advisor or recommendations provided by Azure SQL.
-- <b>Optimize Queries:</b> Write efficient SQL queries and avoid using wildcard characters at the beginning of search patterns. Use query performance insights to identify and optimize slow queries.
-- <b>Partitioning:</b> Implement partitioning for large tables to improve performance and manageability.
-- <b>Monitor Performance:</b> Use Azure Monitor and Azure SQL Analytics to track performance metrics and identify bottlenecks.
-
-
-
-### Security Best Practices:
-
-- <b>Enable Azure Defender:</b> Use Azure Defender for SQL to enhance database security by detecting potential vulnerabilities and threats.
-- <b>Use Azure Active Directory Authentication:</b> Implement Azure AD authentication to manage database access and improve security.
-- <b>Data Encryption:</b> Use Transparent Data Encryption (TDE) for data at rest and Always Encrypted for data in use. Ensure that all connections use SSL/TLS for data in transit.
-- <b>Network Security:</b> Use Virtual Network Service Endpoints and Private Link to secure access to your SQL databases and limit exposure to the public internet.
-- <b>Compliance:</b> Regularly review and comply with data protection regulations and best practices.
-
-
-
-### Management and Monitoring:
-
-- <b>Automated Backups:</b> Set up automated backups with the appropriate retention period to ensure data protection and disaster recovery.
-- <b>Scaling:</b> Utilize the elastic scaling features to dynamically adjust resources based on workload demands.
-- <b>Auditing and Monitoring:</b> Enable auditing to track database activities and use Azure Monitor for continuous monitoring and alerting.
-- <b>Automatic Tuning:</b> Enable automatic tuning to automatically apply performance improvements and recommendations.
-- <b>Policy Management:</b> Implement Azure Policy to enforce organizational standards and compliance.
-
-
-
-### Development and Deployment:
-
-- <b>DevOps Integration:</b> Use Azure DevOps for continuous integration and continuous deployment (CI/CD) pipelines to streamline development and deployment processes.
-- <b>Schema Management:</b> Use tools like SQL Server Data Tools (SSDT) and Entity Framework for version control and schema management.
-- <b>Testing:</b> Implement rigorous testing protocols, including unit tests, integration tests, and performance tests.
-- <b>Documentation:</b> Maintain comprehensive documentation for database schema, configurations, and changes.
-- <b>Resource Management:</b> Use Resource Manager templates for consistent and repeatable deployment of resources.
-
-
-
-### Cost Management:
-
-- <b>Reserved Instances:</b> Consider using reserved instances for predictable workloads to save on costs.
-- <b>Monitoring Costs:</b> Use Azure Cost Management to monitor and optimize your database spending.
-- <b>Database Sizing:</b> Right-size your databases to match your workload needs and avoid over-provisioning.
-- <b>Serverless Options:</b> For variable workloads, consider using the serverless tier to automatically scale resources and reduce costs during idle times.
-- <b>Optimize Storage:</b> Regularly review and optimize storage usage, archiving or deleting obsolete data as needed.
-
- 
