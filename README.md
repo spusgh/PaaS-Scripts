@@ -1,8 +1,8 @@
-﻿# PAAS
+﻿# Platform As a Service (PaaS) vs Software As a Service (SaaS) in Platform Engineering
 
 The platform engineering - blend both PaaS (Platform as a Service) and SaaS (Software as a Service) depending on which layer:
 
-## ⚙️ Mostly PaaS (Platform as a Service)
+## ⚙️ Mostly PaaS (Platform As a Service)
 These lean heavily on PaaS components for customization, orchestration, and deployment:
 
 <li><b>LangChain Agents, FastAPI, Azure ML, MLflow, Feast →</b> Developer-centric tools used to build and deploy custom AI services
@@ -13,7 +13,7 @@ These lean heavily on PaaS components for customization, orchestration, and depl
 
 These services provide infrastructure and tooling but require engineering effort to operationalize.
 
-## 📦 Sometimes SaaS (Software as a Service)
+## 📦 Sometimes SaaS (Software As a Service)
 SaaS enters the picture when these components are consumed as packaged applications:
 
 <li><b>Power BI dashboards or Power Apps frontends → </b>No-code apps that provide business-ready interfaces
