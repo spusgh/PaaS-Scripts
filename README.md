@@ -2,6 +2,11 @@
 
 The platform engineering - blend both PaaS (Platform as a Service) and SaaS (Software as a Service) depending on which layer:
 
+## 🧠 PaaS AI Intelligence Platform
+<li><a href="https://github.com/spusgh/PaaS-Scripts/tree/main/AI-PoweredDeveloperExperiencePlatform">PaaS : AI-Powered Developer Experience Platform</a> <br/>
+<li><a href="https://github.com/spusgh/PaaS-Scripts/tree/main/Self-HealingInfrastructurePlatform">PaaS : Self-Healing Infrastructure</a> <br/>
+
+
 ## ⚙️ Mostly PaaS (Platform As a Service)
 These lean heavily on PaaS components for customization, orchestration, and deployment:
 
