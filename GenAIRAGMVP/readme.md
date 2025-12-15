@@ -2,8 +2,27 @@
 
 A production-ready Retrieval-Augmented Generation (RAG) application powered by Claude AI, featuring semantic search, document management, and intelligent chat capabilities.
 
-## 🚀 Features
 
+## 🎬 Demo
+- MVP Dashboard <br/>
+  ![Chat Interface Dashboard](./screenshots/GenAIRAG-ChatInterface.png)<br/>
+
+- MVP Dashboard - GenAIRAG- Documents Chunk<br/>
+  ![GenAIRAG- Documents Chunk](./screenshots/GenAIRAG-DocumentsChunk.png)<br/>
+
+- MVP Dashboard - GenAIRAG-RAG Context Links <br/>
+  ![GenAIRAG-RAG Context Links](./screenshots/GenAIRAG-RAGContextLinks.png)<br/>
+
+- MVP Dashboard - GenAIRAG - GenAIRAG-UsageConversationChats<br/>
+  ![GenAIRAG-Usage Conversation Chats](./screenshots/GenAIRAG-UsageConversationChats.png)<br/>
+
+- MVP Dashboard - GenAIRAG-Usage Management<br/>
+  ![GenAIRAG-Usage Management](./screenshots/GenAIRAG-UsageManagement.png)<br/>
+
+- MVP Dashboard -GenAIRAG-Vector Embedings<br/>
+  ![GenAIRAG-VectorEmbedings](./screenshots/GenAIRAG-VectorEmbedings.png)<br/>
+
+## 🚀 Features
 - **Intelligent Chat Interface**: Conversational AI powered by Claude Sonnet 4
 - **RAG Pipeline**: Semantic search with vector embeddings for context-aware responses
 - **Document Management**: Upload, process, and index documents for knowledge retrieval
@@ -64,7 +83,6 @@ A production-ready Retrieval-Augmented Generation (RAG) application powered by C
 - PostgreSQL 16 with pgvector
 - Docker & Docker Compose (optional)
 - Anthropic API Key
-
 
 ## 🗄️ Database Schema
 
