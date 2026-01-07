@@ -8,7 +8,16 @@ It also highlights **data engineering workflows** that extend platform engineeri
 ---
 ![Platform Engineering Diagram](./PE-PaaS.png)
 
+---
+## 🌐 Comprehensive List of PaaS Tools
+| Category	| Examples |
+|-------------------------|------------------------------------------|
+| Enterprise Cloud PaaS	| AWS Elastic Beanstalk, Azure App Service, Google App Engine, IBM Cloud Foundry, Oracle Cloud Infrastructure, SAP Business Technology Platform | 
+| Developer-Friendly PaaS	| Heroku, Render, Fly.io, Railway, Netlify, Vercel, Mendix, Engine Yard, Cloudways, DigitalOcean App Platform | 
+| Container/Kubernetes PaaS	| Red Hat OpenShift, Cloud Foundry, Rancher, Portainer | 
+| Open Source / Self-Hosted PaaS	| Dokku, CapRover, Qovery, Coherence, Virtuozzo | 
 
+---
 ## 🔑 Engineering Domains
 - **Developer Experience Engineering** → AI-powered dev portals, feature flag systems  
 - **Data Engineering** → ETL pipelines, data mesh, DAMA dashboards, synthetic data generation  
@@ -20,7 +29,8 @@ It also highlights **data engineering workflows** that extend platform engineeri
 
 ## 🧠 PaaS AI Intelligence Platform
 - [AI-Powered Developer Experience Platform](./AI-PoweredDeveloperExperiencePlatform)  
-- [Data-Driven Feature Flag System](./Data-DrivenFeatureFlagSystem)  
+- [Data-Driven Feature Flag System](./Data-DrivenFeatureFlagSystem)
+- [Schema Definition & Metadata Modeling Technologies](./DataPlatformLayers/MetadataModeling)
 - [Self-Healing Infrastructure](./Self-HealingInfrastructurePlatform)  
 
 ---
