@@ -8,54 +8,54 @@ This document provides a comprehensive list of technologies used for **schema de
 
 ## 1. Schema Definition Languages (SDLs)
 
-- GraphQL SDL
-- OpenAPI / Swagger
 - AsyncAPI
 - Avro Schema
+- GraphQL SDL
+- JSON Schema
+- OpenAPI / Swagger
 - Protobuf
 - Thrift IDL
-- JSON Schema
 - XML Schema (XSD)
 
 ---
 
 ## 2. ORM / Data Modeling Layers
 
-- Prisma Schema
-- SQLAlchemy Models
-- TypeORM Entities
 - Django Models
 - Entity Framework Models
 - Hibernate / JPA Models
+- Prisma Schema
+- SQLAlchemy Models
+- TypeORM Entities
 
 ---
 
 ## 3. Data Platform Modeling Systems
 
+- AtScale Semantic Layer
+- Cube Semantic Layer
 - dbt Models
 - LookML (Looker)
-- Cube Semantic Layer
-- AtScale Semantic Layer
 - MetricFlow (Transform)
 
 ---
 
 ## 4. Metadata Catalogs & Metadata Engines
 
-- DataHub
-- Amundsen
-- OpenMetadata
-- Collibra
 - Alation
-- Informatica EDC
 - Apache Atlas
+- Collibra
+- DataHub
+- Informatica EDC
+- OpenMetadata
+- Amundsen
 
 ---
 
 ## 5. Data Contract Systems
 
-- Confluent Schema Registry (Avro / JSON / Protobuf)
 - AWS Glue Schema Registry
+- Confluent Schema Registry (Avro / JSON / Protobuf)
 - Gloo Data Contracts
 - Open Data Contracts Standard
 
@@ -63,40 +63,41 @@ This document provides a comprehensive list of technologies used for **schema de
 
 ## 6. ML Metadata & Feature Modeling
 
-- MLflow Model Schema
 - Feast Feature Store
+- MLflow Model Schema
+- SageMaker Model Registry
 - Tecton Feature Models
 - Vertex AI Metadata
-- SageMaker Model Registry
 
 ---
 
 ## 7. API & Event Modeling Systems
 
 - AsyncAPI
-- OpenAPI
 - EventBridge Schema Registry
 - Kafka Schema Registry
+- OpenAPI
 
 ---
 
 ## 8. Enterprise Modeling / Architecture Tools
 
-- ERWin Data Modeler
-- Sparx Enterprise Architect
-- PowerDesigner
 - Archimate / TOGAF Modeling Tools
+- ERWin Data Modeler
+- PowerDesigner
+- Sparx Enterprise Architect
 
 ---
 
 ## 9. Modern Schema‑as‑Code Systems
 
-- Prisma Schema
-- Hasura Metadata
-- Supabase Schema
+- Clay
 - Drizzle ORM Schema
-- SQLMesh Models
+- Hasura Metadata
 - Pydantic Models
+- Prisma Schema
+- SQLMesh Models
+- Supabase Schema
 - Zod Schemas
 
 ---
