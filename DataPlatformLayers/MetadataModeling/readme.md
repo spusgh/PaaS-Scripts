@@ -1,6 +1,123 @@
-# Meta Data Modeling - Clay Database
+# Meta Data Modeling
 
-## XYZ Financials & Securities System
+# Schema Definition & Metadata Modeling Technologies
+
+This document provides a comprehensive list of technologies used for **schema definition**, **metadata modeling**, **data contracts**, and **schema‑as‑code** across modern platform engineering, data platforms, and ML ecosystems.
+
+---
+
+## 1. Schema Definition Languages (SDLs)
+
+- GraphQL SDL
+- OpenAPI / Swagger
+- AsyncAPI
+- Avro Schema
+- Protobuf
+- Thrift IDL
+- JSON Schema
+- XML Schema (XSD)
+
+---
+
+## 2. ORM / Data Modeling Layers
+
+- Prisma Schema
+- SQLAlchemy Models
+- TypeORM Entities
+- Django Models
+- Entity Framework Models
+- Hibernate / JPA Models
+
+---
+
+## 3. Data Platform Modeling Systems
+
+- dbt Models
+- LookML (Looker)
+- Cube Semantic Layer
+- AtScale Semantic Layer
+- MetricFlow (Transform)
+
+---
+
+## 4. Metadata Catalogs & Metadata Engines
+
+- DataHub
+- Amundsen
+- OpenMetadata
+- Collibra
+- Alation
+- Informatica EDC
+- Apache Atlas
+
+---
+
+## 5. Data Contract Systems
+
+- Confluent Schema Registry (Avro / JSON / Protobuf)
+- AWS Glue Schema Registry
+- Gloo Data Contracts
+- Open Data Contracts Standard
+
+---
+
+## 6. ML Metadata & Feature Modeling
+
+- MLflow Model Schema
+- Feast Feature Store
+- Tecton Feature Models
+- Vertex AI Metadata
+- SageMaker Model Registry
+
+---
+
+## 7. API & Event Modeling Systems
+
+- AsyncAPI
+- OpenAPI
+- EventBridge Schema Registry
+- Kafka Schema Registry
+
+---
+
+## 8. Enterprise Modeling / Architecture Tools
+
+- ERWin Data Modeler
+- Sparx Enterprise Architect
+- PowerDesigner
+- Archimate / TOGAF Modeling Tools
+
+---
+
+## 9. Modern Schema‑as‑Code Systems
+
+- Prisma Schema
+- Hasura Metadata
+- Supabase Schema
+- Drizzle ORM Schema
+- SQLMesh Models
+- Pydantic Models
+- Zod Schemas
+
+---
+
+## Summary
+
+These technologies form the backbone of **SchemaDefinition** and **MetadataModeling** layers across modern engineering organizations. They enable:
+
+- Consistent data contracts  
+- Strong typing across services  
+- Metadata‑driven automation  
+- Platform‑level abstractions  
+- Unified schema governance  
+
+They are not databases — they are **schema and metadata systems** that sit above storage engines and power modern platform engineering and data platforms.
+
+---
+---
+
+
+## Clay Database - XYZ Financials & Securities System
 
 ### Overview
 
